@@ -21,31 +21,13 @@ body{
     padding: 16px;
 }
 
-.todo-card{
-    margin-bottom: 4px;
-    padding: 4px;
+header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 4px;
 }
 
-/* .detail-btn{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50%;
-    font-size: x-large;
-    width: 30px;
-    height: 30px;
-    line-height: 10px;
-} */
-
-/* .detail-btn:hover{
-    background-color: black;
-    color: white;
-} */
-
-.detail-link{
+.back-link{
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
@@ -59,7 +41,7 @@ body{
     display: inline-block;
 }
 
-.detail-link:hover{
+.back-link:hover{
     background-color: black;
     color: white;
 }
