@@ -79,3 +79,7 @@ function orderByCreationDate(){
 // due tasti nella home (lista di todo)
 // 1) mette in ordine alfabetico
 // 2) mette in ordine dal più nuovo al più vecchio in base alla creationDate
+
+// 0) finire il task dato a lezione (quanti giorni mancano alla scadenza??)
+// 1) personalizzare graficamente l'app
+// 2) aggiungere un bottone delete nella pagina di dettaglio
