@@ -43,4 +43,19 @@ const searchParams = new URLSearchParams(window.location.search);
 
 const id = searchParams.get('todoId');
 
-getTodo(id).then(result => displayTodo(result));
+let selectedTodo;
+
+getTodo(id).then(result => {
+    selectedTodo = result;
+    displayTodo(result)
+});
+
+
+function deleteTodoAndRedirect() {
+
+    if (confirm("Vuoi veramente cancellare il todo???")) {
+        deleteTodo(selectedTodo.id).then(_ => {
+            window.location.assign('./')
+        });  
+    }
+}

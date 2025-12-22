@@ -34,6 +34,8 @@ function displayTodos(todos){
 
         // card.appendChild(detailBtn);
 
+        const completeBtn = document.createElement('button');
+
         const detailLink = document.createElement('a');
         detailLink.appendChild(document.createTextNode("🠊"));
         detailLink.classList.add("detail-link");
