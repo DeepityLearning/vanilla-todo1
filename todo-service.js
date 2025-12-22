@@ -26,14 +26,14 @@ function deleteTodo(id) {
     .catch(error => console.error('Aiuuutoooo!', error))
 }
 
-function completeTodo(id) {
+function changeDoneStatus(id, newStatus) {
 
     const apiUrl = "https://6942665069b12460f310f9c1.mockapi.io/api/v1/todos/" + id;
 
-    fetch(apiUrl, {
+    return fetch(apiUrl, {
         method: 'PATCH',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ done: true })
+        body: JSON.stringify({ done: newStatus })
     }).then(response => response.json())
     .then(result => result)
     .catch(error => console.error('Aiuuutoooo!', error))

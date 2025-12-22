@@ -46,7 +46,17 @@ function displayTodos(todos){
         completeBtn.classList.add("action");
 
         completeBtn.addEventListener('click', () => {
-            
+            changeDoneStatus(todo.id, !todo.done)
+            .then(_ => {
+
+                todo.done = !todo.done;
+                displayTodos(todos);
+
+                // getAllTodos().then(results => {
+                //     todos = results;
+                //     displayTodos(todos)
+                // })          
+            })
         })
 
         actionsDiv.appendChild(completeBtn);

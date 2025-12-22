@@ -21,6 +21,13 @@ function displayTodo(todo) {
         doneSpan.innerHTML = 'da completare'
     }
 
+    const statusBtn = document.getElementById("status-btn");
+    if (todo.done) {
+        statusBtn.innerHTML = "riattiva";
+    } else {
+        statusBtn.innerHTML = "completa";
+    }
+
 }
 
 function formaDate(dateISO) {
@@ -58,4 +65,12 @@ function deleteTodoAndRedirect() {
             window.location.assign('./')
         });  
     }
+}
+
+function changeStatus() {
+    changeDoneStatus(selectedTodo.id, !selectedTodo.done)
+    .then(_ => {
+        selectedTodo.done = !selectedTodo.done;
+        displayTodo(selectedTodo);
+    })
 }
