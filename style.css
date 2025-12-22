@@ -19,6 +19,10 @@ body{
 .page{
     max-width: 800px;
     padding: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .todo-card{
@@ -81,4 +85,9 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.actions-container{
+    display: flex;
+    justify-content: flex-end;
 }

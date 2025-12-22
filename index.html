@@ -10,18 +10,23 @@
 
 <body>
     <div class="page">
-        <header>
-            <h1>Todo App</h1>
-        </header>
-        <main>
-            <div>
-                <button class="sort-btn" onclick="orderByTitle()">Ordina per titolo</button>
-                <button class="sort-btn" onclick="orderByCreationDate()">Ordina per data di creazione</button>
-            </div>
-            <div id="todos-container">
-
-            </div>
-        </main>
+        <div>
+            <header>
+                <h1>Todo App</h1>
+            </header>
+            <main>
+                <div>
+                    <button class="sort-btn" onclick="orderByTitle()">Ordina per titolo</button>
+                    <button class="sort-btn" onclick="orderByCreationDate()">Ordina per data di creazione</button>
+                </div>
+                <div id="todos-container">
+        
+                </div>
+            </main>
+        </div>
+        <div class="actions-container">
+            <a class="action" href="./new.html">+</a>
+        </div>
     </div>
 </body>
 <script src="./todo-service.js"></script>
