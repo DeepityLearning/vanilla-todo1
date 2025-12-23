@@ -9,7 +9,11 @@ function displayTodo(todo) {
     creationDateSpan.innerHTML = formaDate(todo.creationDate);
 
     const endDateSpan = document.getElementById('todo-end-date');
-    endDateSpan.innerHTML = formaDate(todo.endDate);
+    if (todo.endDate === "") {
+        endDateSpan.innerHTML = "nessuna";
+    } else {
+        endDateSpan.innerHTML = formaDate(todo.endDate);
+    }
 
     const colorDiv = document.getElementById('todo-color');
     colorDiv.style.backgroundColor = todo.color;
