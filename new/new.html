@@ -12,11 +12,12 @@
     <div class="page">
         <div>
             <header>
-                <a class="back-link" href="./">🠈</a>
+                <a class="action" href="../">🠈</a>
                 <h1>Nuovo Todo</h1>
             </header>
             <main>
-                <form id="todo-form" onsubmit="saveTodo(event)">
+                <!-- <form id="todo-form" onsubmit="saveTodo(event)"> -->
+                <form id="todo-form">
                     <div class="form-group">
                         <label for="title">Titolo</label>
                         <input class="form-input" type="text" id="title" name="title" required>
@@ -38,17 +39,15 @@
                             <option value="#ff0000">Rosso</option>
                         </select>
                     </div>
-                    <button type="submit">Salva Todo</button>
+                    <button class="text-btn" type="submit">Salva Todo</button>
                 </form>
 
             </main>
         </div>
-        <div class="actions-container">
-            <a class="action" href="./new.html">+</a>
-        </div>
     </div>
 </body>
-<script src="./todo-service.js"></script>
-<script src="./new-script.js"></script>
+<!-- <script src="../shared/todo-service.js"></script> -->
+<script type="module" src="./new-script.js"></script>
+
 
 </html>
